@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 public class KioskService extends Service {
 
-    private static final long INTERVAL = TimeUnit.SECONDS.toMillis(2); // periodic interval to check in seconds -> 2 seconds
+    private static final long INTERVAL = 500; //TimeUnit.SECONDS.toMillis(2); // periodic interval to check in seconds -> 2 seconds
     private static final String TAG = KioskService.class.getSimpleName();
 
     private Thread t = null;
